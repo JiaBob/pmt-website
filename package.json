@@ -3,9 +3,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "predeploy": "yarn install && yarn generate && cd .output/public && echo >> .nojekyll && echo 'privacypromedical.com' > CNAME",
-    "deploy": "git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:JiaBob/pmt-website.git master:gh-pages",
-    "postdeploy": "cd -",
+    "predeploy": "yarn install && yarn generate",
+    "deploy": "cd .output/public && echo >> .nojekyll && echo 'privacypromedical.com' > CNAME && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:JiaBob/pmt-website.git master:gh-pages && cd -",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
