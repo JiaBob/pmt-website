@@ -13,6 +13,6 @@ echo 'privacypromedical.com' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:1isten/pmt-website.git master:gh-pages
+git push -f git@github.com:JiaBob/pmt-website.git master:gh-pages
 
 cd -
