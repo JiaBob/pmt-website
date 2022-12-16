@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
-set -e
+# set -e
 
 yarn generate
 
 cd .output/public
 
-touch .nojekyll
+echo >> .nojekyll
 
 echo 'privacypromedical.com' > CNAME
 
