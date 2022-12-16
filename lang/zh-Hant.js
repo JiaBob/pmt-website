@@ -62,7 +62,7 @@ export default {
   'Bussiness advsior': '商業顧問',
   'Manger Director of an Investment Bank': '一家投資銀行的經理主任',
 
-  'Mr Jiabo XU': '徐家博先生',
+  'Mr Jiabo XU': '许家博先生',
   'Research Scientist': '項目經理',
   'Worked in CSIRO, Data 61 Australia': '曾工作與澳大利亞聯邦科學與工業研究組織(CSIRO)數據61部',
 
