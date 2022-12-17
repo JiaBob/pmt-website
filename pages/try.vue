@@ -20,7 +20,7 @@
                 Free
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white border border-gray-500 rounded uppercase">Go Free</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Free</button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
               <ul class="text-sm mt-3 space-y-2">
@@ -40,7 +40,7 @@
                 $50 <span class="text-sm font-normal text-gray-500">/ year</span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white border border-gray-500 rounded uppercase">Go Productivity</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">Everything in Standard plus</div>
               <ul class="text-sm mt-3 space-y-2">
@@ -61,7 +61,7 @@
                 $80 <span class="text-sm font-normal text-gray-500">/ year</span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black border border-gray-500 rounded uppercase">Go Professional</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase">Go Professional</button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">Everything in Productivity plus</div>
               <ul class="text-sm mt-3 space-y-2">

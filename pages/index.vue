@@ -280,7 +280,7 @@
           <label class="mt-4">
             <textarea class="w-full px-3 py-2 border border-white bg-black placeholder-gray-500 resize-none outline-none focus:ring-1 focus:ring-white" name="message" :placeholder="$t('Message')" rows="8"></textarea>
           </label>
-          <button class="mt-4 w-full md:w-36 mx-auto px-3 py-2 h-10 bg-white text-black uppercase text-sm font-medium" type="submit">{{ $t('Submit') }}</button>
+          <button class="mt-4 w-full md:w-36 mx-auto px-3 py-2 h-10 bg-white hover:bg-gray-200 transition text-black uppercase text-sm font-medium" type="submit">{{ $t('Submit') }}</button>
         </form>
         <TheFooter class="mt-8 mb-4" />
       </div>
