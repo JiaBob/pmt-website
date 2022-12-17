@@ -55,7 +55,7 @@ export default {
   'Ms Catherine GUO': '郭靜蓮女士',
   'LL.B / LL.M': 'LL.B / LL.M',
   'Legal advisor': '法律顧問',
-  'Head of Shenzhen Office of AnJie Broad Law Firm': '深圳安傑律師事務所辦公室主任',
+  'Head of Shenzhen Office of AnJie Broad Law Firm': '北京安杰世泽律师事务所深圳分所主管',
 
   'Mr. Frankie YAN': '甄文星先生',
   'CPA': 'CPA',
