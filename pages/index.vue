@@ -86,39 +86,55 @@
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center text-center">
         <p class="font-bold uppercase text-2xl md:text-3xl -mt-4">{{ $t('Product Features') }}</p>
         <div class="container mx-auto bg-white w-full h-full overflow-x-auto">
-          <div class="h-full p-6 flex flex-row flex-wrap">
+          <div class="h-full p-6 pb-0 flex flex-row flex-wrap">
             <div class="w-1/2 sm:w-3/12 flex-shrink-0 p-3 md:p-6 flex">
-              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-center items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
-                <img src="/product/Automation.png" class="w-9/12 h-auto" width="365" height="365" alt="Automation" />
-                <span class="text-xl md:text-2xl text-center">{{ $t('Automation') }}</span>
-                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic mt-1 hidden xl:block">
+              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-start items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
+                <div class="w-9/12 flex justify-center items-center">
+                  <img class="w-full h-auto" width="365" height="365" src="/product/Automation.png" alt="Automation" />
+                </div>
+                <div class="text-xl md:text-2xl text-center mt-3">
+                  {{ $t('Automation') }}
+                </div>
+                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
                   {{ $t('Our product will provide a standardized process to help AI developers efficiently manage raw medical data to build high quality de-identified datasets.') }}
                 </p>
               </div>
             </div>
             <div class="w-1/2 sm:w-3/12 flex-shrink-0 p-3 md:p-6 flex">
-              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-center items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
-                <img src="/product/Telemedical.webp" class="w-8/12 h-auto mb-4" width="365" height="365" alt="Telemedical" />
-                <span class="text-xl md:text-2xl text-center">{{ $t('Telemedicine') }}</span>
-                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic mt-1 hidden xl:block">
+              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-start items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
+                <div class="w-9/12 flex justify-center items-center">
+                  <img class="w-full h-auto" width="365" height="365" src="/product/Telemedical.webp" alt="Telemedical" />
+                </div>
+                <div class="text-xl md:text-2xl text-center mt-3">
+                  {{ $t('Telemedicine') }}
+                </div>
+                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
                   {{ $t('We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.') }}
                 </p>
               </div>
             </div>
             <div class="w-1/2 sm:w-3/12 flex-shrink-0 p-3 md:p-6 flex">
-              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-center items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
-                <img src="/product/Security.png" class="w-7/12 h-auto mb-3" width="365" height="365" alt="Security" />
-                <span class="text-xl md:text-2xl text-center">{{ $t('Privacy Protection') }}</span>
-                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic mt-1 hidden xl:block">
+              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-start items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
+                <div class="w-9/12 flex justify-center items-center">
+                  <img class="w-full h-auto" width="365" height="365" src="/product/Security.png" alt="Security" />
+                </div>
+                <div class="text-xl md:text-2xl text-center mt-3">
+                  {{ $t('Privacy Protection') }}
+                </div>
+                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
                   {{ $t('Through our de-identification technology, including medical image DICOM header de-identification, text de-identification and facial de-identification, patient privacy information can be comprehensively protected.') }}
                 </p>
               </div>
             </div>
             <div class="w-1/2 sm:w-3/12 flex-shrink-0 p-3 md:p-6 flex">
-              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-center items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
-                <img src="/product/Preservation.png" class="w-8/12 h-auto mb-3" width="365" height="365" alt="Preservation" />
-                <p class="text-xl md:text-2xl text-center">{{ $t('Anatomical Preservation') }}</p>
-                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic mt-1 hidden xl:block">
+              <div class="py-1 px-2 sm:px-3 flex-1 flex flex-col justify-start items-center bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300">
+                <div class="w-9/12 flex justify-center items-center">
+                  <img class="w-full h-auto" width="365" height="365" src="/product/Preservation.png" alt="Preservation" />
+                </div>
+                <div class="text-xl md:text-2xl text-center mt-3">
+                  {{ $t('Anatomical Preservation') }}
+                </div>
+                <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
                   {{ $t('De-identification techniques are often accompanied by the destruction of internal anatomical information, while our de-identification keeps anatomical information intact.') }}
                 </p>
               </div>
