@@ -37,41 +37,48 @@
     <div class="relative transition-all duration-300" :class="bannerIsVisible ? 'pt-20' : 'pt-20'">
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center text-center">
         <p id="product" class="font-bold uppercase text-2xl md:text-3xl scroll-mt-20">{{ $t('Product Functions') }}</p>
-        <div id="swiperProductFunctions" class="swiper bg-white w-full h-full" style="--swiper-theme-color: #000">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide lg:px-24 pb-14 flex flex-col lg:flex-row justify-center items-center">
-              <img class="w-9/12 lg:w-1/2" src="/product/003_Head.png" />
-              <div class="w-full lg:w-1/2 px-14 mt-8 lg:mt-0 flex flex-col items-center">
-                <span class="text-xl lg:text-3xl">{{ $t('Facial De-identification') }}</span>
-                <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('Revealed by 3D reconstruction of the face or body surface from CT and MRI') }}</li>
-                </ul>
-              </div>
+        <swiper
+          id="swiperProductFunctions"
+          class="bg-white w-full h-full"
+          style="--swiper-theme-color: #000"
+          :modules="[Navigation, Pagination, Autoplay, Mousewheel, A11y]"
+          :autoplay="{ delay: 3600, disableOnInteraction: false }"
+          loop
+          allow-touch-move
+          :mousewheel="{ forceToAxis: true }"
+          :simulate-touch="false"
+          :pagination="{ clickable: true }"
+          navigation
+        >
+          <swiper-slide class="lg:px-24 pb-14 flex flex-col lg:flex-row justify-center items-center">
+            <img class="w-9/12 lg:w-1/2" src="/product/003_Head.png" />
+            <div class="w-full lg:w-1/2 px-14 mt-8 lg:mt-0 flex flex-col items-center">
+              <span class="text-xl lg:text-3xl">{{ $t('Facial De-identification') }}</span>
+              <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('Revealed by 3D reconstruction of the face or body surface from CT and MRI') }}</li>
+              </ul>
             </div>
-            <div class="swiper-slide lg:px-24 pb-14 flex flex-col lg:flex-row-reverse justify-center items-center">
-              <img class="w-9/12 lg:w-4/12 mt-8 lg:mt-12" src="/product/002_Txt.png" />
-              <div class="w-full lg:w-7/12 px-14 mt-8 lg:mt-0 flex flex-col items-center">
-                <span class="text-xl lg:text-3xl">{{ $t('Text De-identification') }}</span>
-                <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('Medical privacy information is directly inserted in medical images') }}</li>
-                </ul>
-              </div>
+          </swiper-slide>
+          <swiper-slide class="lg:px-24 pb-14 flex flex-col lg:flex-row-reverse justify-center items-center">
+            <img class="w-9/12 lg:w-4/12 mt-8 lg:mt-12" src="/product/002_Txt.png" />
+            <div class="w-full lg:w-7/12 px-14 mt-8 lg:mt-0 flex flex-col items-center">
+              <span class="text-xl lg:text-3xl">{{ $t('Text De-identification') }}</span>
+              <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('Medical privacy information is directly inserted in medical images') }}</li>
+              </ul>
             </div>
-            <div class="swiper-slide lg:px-24 pb-14 flex flex-col lg:flex-row justify-center items-center">
-              <img class="w-9/12 lg:w-1/2 mt-8 lg:mt-0" src="/product/001_Dicom.png" />
-              <div class="w-full lg:w-1/2 px-14 mt-8 lg:mt-0 flex flex-col items-center">
-                <span class="text-xl lg:text-3xl">{{ $t('DICOM Header De-identification') }}</span>
-                <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('Most medical images are stored in standard DICOM format') }}</li>
-                  <li>{{ $t('Patient identities are always saved in DICOM header') }}</li>
-                </ul>
-              </div>
+          </swiper-slide>
+          <swiper-slide class="lg:px-24 pb-14 flex flex-col lg:flex-row justify-center items-center">
+            <img class="w-9/12 lg:w-1/2 mt-8 lg:mt-0" src="/product/001_Dicom.png" />
+            <div class="w-full lg:w-1/2 px-14 mt-8 lg:mt-0 flex flex-col items-center">
+              <span class="text-xl lg:text-3xl">{{ $t('DICOM Header De-identification') }}</span>
+              <ul class="list-disc list-inside italic text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('Most medical images are stored in standard DICOM format') }}</li>
+                <li>{{ $t('Patient identities are always saved in DICOM header') }}</li>
+              </ul>
             </div>
-          </div>
-          <div class="swiper-pagination opacity-70"></div>
-          <div class="swiper-button-prev opacity-30 hover:opacity-50 transition duration-300"></div>
-          <div class="swiper-button-next opacity-30 hover:opacity-50 transition duration-300"></div>
-        </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
     <!-- Product Features -->
@@ -140,92 +147,99 @@
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center">
         <p class="font-bold uppercase text-2xl md:text-3xl -mt-4 mb-2">{{ $t('Our Core Members') }}</p>
         <p class="px-6 text-center text-xl md:text-2xl mb-12 text-gray-700">{{ $t('We are a versatile team in technical, academic, and the clinical fields.') }}</p>
-        <div id="swiperTeamMembers" class="swiper bg-white w-full h-full" style="--swiper-theme-color: #000">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="302" height="396" src="/team/CHEN_Weitian.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Prof. Weitian CHEN') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('Co-founder') }}</li>
-                  <li>{{ $t('18 years experience in medical imnaging technology') }}</li>
-                  <li>{{ $t('7 years experience in medical imaging industry') }}<span class="inline-block">{{ $t(' (GE Healthcare, USA)') }}</span></li>
-                </ul>
-              </div>
+        <swiper
+          id="swiperTeamMembers"
+          class="bg-white w-full h-full"
+          style="--swiper-theme-color: #000"
+          :modules="[Navigation, Pagination, Autoplay, Mousewheel, A11y]"
+          :autoplay="{ delay: 7000, disableOnInteraction: false }"
+          loop
+          allow-touch-move
+          :mousewheel="{ forceToAxis: true }"
+          :simulate-touch="false"
+          :pagination="{ clickable: true }"
+          navigation
+        >
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="302" height="396" src="/team/CHEN_Weitian.png" />
             </div>
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="304" height="396" src="/team/Dr_YU.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Prof. Simon YU') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('MBBS, MD, FRCR') }}</li>
-                  <li>{{ $t('Co-founder') }}</li>
-                  <li>{{ $t('Medical advisor') }}</li>
-                  <li>{{ $t('Senior clinical radiologiest') }}</li>
-                </ul>
-              </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Prof. Weitian CHEN') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('Co-founder') }}</li>
+                <li>{{ $t('18 years experience in medical imnaging technology') }}</li>
+                <li>{{ $t('7 years experience in medical imaging industry') }}<span class="inline-block">{{ $t(' (GE Healthcare, USA)') }}</span></li>
+              </ul>
             </div>
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="212" height="274" src="/team/Dr_CHU-6.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Prof. Winne CHU') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('MBChB, FRCR, MD') }}</li>
-                  <li>{{ $t('Co-founder') }}</li>
-                  <li>{{ $t('Medical advisor') }}</li>
-                  <li>{{ $t('Senior clinical radiologiest') }}</li>
-                </ul>
-              </div>
+          </swiper-slide>
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="304" height="396" src="/team/Dr_YU.png" />
             </div>
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="199" height="267" src="/team/Catherine.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Ms Catherine GUO') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('LL.B / LL.M') }}</li>
-                  <li>{{ $t('Legal advisor') }}</li>
-                  <li>{{ $t('Head of Shenzhen Office of AnJie Broad Law Firm') }}</li>
-                </ul>
-              </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Prof. Simon YU') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('MBBS, MD, FRCR') }}</li>
+                <li>{{ $t('Co-founder') }}</li>
+                <li>{{ $t('Medical advisor') }}</li>
+                <li>{{ $t('Senior clinical radiologiest') }}</li>
+              </ul>
             </div>
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="200" height="267" src="/team/Frankie.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Mr. Frankie YAN') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('CPA') }}</li>
-                  <li>{{ $t('Bussiness advsior') }}</li>
-                  <li>{{ $t('Manger Director of an Investment Bank') }}</li>
-                </ul>
-              </div>
+          </swiper-slide>
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="212" height="274" src="/team/Dr_CHU-6.png" />
             </div>
-            <div class="swiper-slide md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
-              <div class="w-full md:w-4/12">
-                <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="200" height="267" src="/team/Jiabo.png" />
-              </div>
-              <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
-                <span class="text-xl lg:text-3xl">{{ $t('Mr Jiabo XU') }}</span>
-                <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
-                  <li>{{ $t('Research Scientist') }}</li>
-                  <li>{{ $t('Worked in CSIRO, Data 61 Australia') }}</li>
-                </ul>
-              </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Prof. Winne CHU') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('MBChB, FRCR, MD') }}</li>
+                <li>{{ $t('Co-founder') }}</li>
+                <li>{{ $t('Medical advisor') }}</li>
+                <li>{{ $t('Senior clinical radiologiest') }}</li>
+              </ul>
             </div>
-          </div>
-          <div class="swiper-pagination opacity-70"></div>
-          <div class="swiper-button-prev opacity-30 hover:opacity-50 transition duration-300"></div>
-          <div class="swiper-button-next opacity-30 hover:opacity-50 transition duration-300"></div>
-        </div>
+          </swiper-slide>
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="199" height="267" src="/team/Catherine.png" />
+            </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Ms Catherine GUO') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('LL.B / LL.M') }}</li>
+                <li>{{ $t('Legal advisor') }}</li>
+                <li>{{ $t('Head of Shenzhen Office of AnJie Broad Law Firm') }}</li>
+              </ul>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="200" height="267" src="/team/Frankie.png" />
+            </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Mr. Frankie YAN') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('CPA') }}</li>
+                <li>{{ $t('Bussiness advsior') }}</li>
+                <li>{{ $t('Manger Director of an Investment Bank') }}</li>
+              </ul>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="md:px-24 pb-14 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full md:w-4/12">
+              <img class="w-1/2 h-auto mx-auto rounded-full overflow-hidden" width="200" height="267" src="/team/Jiabo.png" />
+            </div>
+            <div class="w-full px-12 sm:px-0 md:w-5/12 mt-8 md:mt-0 lg:-ml-12 flex flex-col items-center md:items-start">
+              <span class="text-xl lg:text-3xl">{{ $t('Mr Jiabo XU') }}</span>
+              <ul class="list-disc list-inside text-base lg:text-lg mt-2 text-gray-700">
+                <li>{{ $t('Research Scientist') }}</li>
+                <li>{{ $t('Worked in CSIRO, Data 61 Australia') }}</li>
+              </ul>
+            </div>
+          </swiper-slide>
+        </swiper>
         <hr class="w-1/2 my-8 border-transparent" />
       </div>
     </div>
@@ -259,6 +273,13 @@
 </template>
 
 <script setup>
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation, Pagination, Autoplay, Mousewheel, A11y } from 'swiper';
+
 // import videojs from 'video.js';
 
 const bannerVideoPlayer = ref(null);
@@ -274,8 +295,10 @@ const { stop } = useIntersectionObserver(bannerInCheckTarget, ([{ isIntersecting
   bannerIsVisible.value = isIntersecting;
 });
 
-const { $Swiper: Swiper, $THREE: THREE } = useNuxtApp();
+const { $THREE: THREE } = useNuxtApp();
 onMounted(() => {
+  console.log(THREE);
+
   // window._player = videojs(bannerVideoPlayer.value, {
   //   fill: true,
   //   sources: [
@@ -284,68 +307,6 @@ onMounted(() => {
   // }, () => {
   //   bannerVideoPlayerReady.value = true;
   // });
-
-  window._swiper1 = new Swiper('#swiperProductFunctions.swiper', {
-    autoplay: {
-      delay: 3600,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    // direction: 'vertical',
-    allowTouchMove: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    simulateTouch: false,
-    // breakpoints: {
-    //   576: {
-    //     speed: 500,
-    //   },
-    //   768: {
-    //     speed: 700,
-    //   },
-    // },
-    pagination: {
-      el: '#swiperProductFunctions .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '#swiperProductFunctions .swiper-button-next',
-      prevEl: '#swiperProductFunctions .swiper-button-prev',
-    },
-  });
-
-  window._swiper2 = new Swiper('#swiperTeamMembers.swiper', {
-    autoplay: {
-      delay: 36000,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    // direction: 'vertical',
-    allowTouchMove: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    simulateTouch: false,
-    // breakpoints: {
-    //   576: {
-    //     speed: 500,
-    //   },
-    //   768: {
-    //     speed: 700,
-    //   },
-    // },
-    pagination: {
-      el: '#swiperTeamMembers .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '#swiperTeamMembers .swiper-button-next',
-      prevEl: '#swiperTeamMembers .swiper-button-prev',
-    },
-  });
-
-  console.log(THREE);
 });
 
 onUnmounted(() => {
@@ -374,6 +335,17 @@ onUnmounted(() => {
 </style>
 
 <style>
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  @apply opacity-20 hover:opacity-30 transition;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply opacity-70 hover:opacity-90 transition;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  @apply opacity-30 hover:opacity-50 transition;
+}
+
 .vjs-controls-disabled > * {
   display: none;
 }
