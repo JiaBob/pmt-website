@@ -1,4 +1,5 @@
 export default {
+  'logo': '/PMT-LOGO.svg',
   'homepage': 'Homepage',
   'nav.intro': 'PrivacyPRO',
   'nav.product': 'Product',
@@ -18,14 +19,14 @@ export default {
   'Revealed by 3D reconstruction of the face or body surface from CT and MRI': 'Revealed by 3D reconstruction of the face or body surface from CT and MRI',
 
   'Product Features': 'Product Features',
-  'Automation': 'Automation',
-  'Our product will provide a standardized process to help AI developers efficiently manage raw medical data to build high quality de-identified datasets.': 'Our product will provide a standardized process to help AI developers efficiently manage raw medical data to build high quality de-identified datasets.',
-  'Telemedicine': 'Telemedicine',
-  'We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.': 'We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.',
-  'Privacy Protection': 'Privacy Protection',
-  'Through our de-identification technology, including medical image DICOM header de-identification, text de-identification and facial de-identification, patient privacy information can be comprehensively protected.': 'Through our de-identification technology, including medical image DICOM header de-identification, text de-identification and facial de-identification, patient privacy information can be comprehensively protected.',
-  'Anatomical Preservation': 'Anatomical Preservation',
-  'De-identification techniques are often accompanied by the destruction of internal anatomical information, while our de-identification keeps anatomical information intact.': 'De-identification techniques are often accompanied by the destruction of internal anatomical information, while our de-identification keeps anatomical information intact.',
+  'feature1': 'Automation',
+  'feature1_description': 'Our product provides comprehensive de-identification of medical imaging data to protect patient privacy.',
+  'feature2': 'Telemedicine',
+  'feature2_description': 'We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.',
+  'feature3': 'Data Management',
+  'feature3_description': 'Our product can be used for managing medical imaging data and building high quality de-identified datasets for research projects in AI and radiomics.',
+  'feature4': 'Anatomical Preservation',
+  'feature4_description': 'Our product keeps anatomical information intact in medical images after de-identification.',
 
   'Our Team': 'Our Team',
   'PMT is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.': 'PrivacyPRO Medical Technology (PMT) is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.',

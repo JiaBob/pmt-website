@@ -93,10 +93,10 @@
                   <img class="w-full h-auto" width="365" height="365" src="/product/Automation.png" alt="Automation" />
                 </div>
                 <div class="text-xl md:text-2xl text-center mt-3">
-                  {{ $t('Automation') }}
+                  {{ $t('feature1') }}
                 </div>
                 <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
-                  {{ $t('Our product will provide a standardized process to help AI developers efficiently manage raw medical data to build high quality de-identified datasets.') }}
+                  {{ $t('feature1_description') }}
                 </p>
               </div>
             </div>
@@ -106,10 +106,10 @@
                   <img class="w-full h-auto" width="365" height="365" src="/product/Telemedical.webp" alt="Telemedical" />
                 </div>
                 <div class="text-xl md:text-2xl text-center mt-3">
-                  {{ $t('Telemedicine') }}
+                  {{ $t('feature2') }}
                 </div>
                 <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
-                  {{ $t('We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.') }}
+                  {{ $t('feature2_description') }}
                 </p>
               </div>
             </div>
@@ -119,10 +119,10 @@
                   <img class="w-full h-auto" width="365" height="365" src="/product/Security.png" alt="Security" />
                 </div>
                 <div class="text-xl md:text-2xl text-center mt-3">
-                  {{ $t('Privacy Protection') }}
+                  {{ $t('feature3') }}
                 </div>
                 <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
-                  {{ $t('Through our de-identification technology, including medical image DICOM header de-identification, text de-identification and facial de-identification, patient privacy information can be comprehensively protected.') }}
+                  {{ $t('feature3_description') }}
                 </p>
               </div>
             </div>
@@ -132,10 +132,10 @@
                   <img class="w-full h-auto" width="365" height="365" src="/product/Preservation.png" alt="Preservation" />
                 </div>
                 <div class="text-xl md:text-2xl text-center mt-3">
-                  {{ $t('Anatomical Preservation') }}
+                  {{ $t('feature4') }}
                 </div>
                 <p class="sm:px-4 text-sm md:text-base text-center text-gray-700 italic hidden xl:block mt-1">
-                  {{ $t('De-identification techniques are often accompanied by the destruction of internal anatomical information, while our de-identification keeps anatomical information intact.') }}
+                  {{ $t('feature4_description') }}
                 </p>
               </div>
             </div>

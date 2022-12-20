@@ -1,8 +1,8 @@
 <template>
   <header class="flex items-center w-full px-4 py-2 sm:px-4 sm:py-4 fixed top-0 z-10 bg-white bg-opacity-90 text-black transition-all duration-300" :class="bannerIsVisible ? 'h-20 sm:h-24' : 'h-16 sm:h-20 text-sm'">
     <a :href="isHome ? '#' : '/'" class="transform sm:scale-110 flex justify-center items-center transition-all" :class="bannerIsVisible ? 'h-16 w-auto sm:h-16 sm:w-16' : 'h-12 w-auto sm:h-12 sm:w-12'">
-      <img class="block sm:hidden w-72 h-auto -ml-1" width="1929" height="320" src="/PMT-LOGO-m.png" alt="Logo" />
-      <img class="hidden sm:block w-full h-full -mr-1" width="95" height="92" src="/PMT-LOGO.svg" alt="Logo" />
+      <img class="block sm:hidden w-72 h-auto -ml-1" width="1929" height="320" :src="$t('logo')" alt="Logo" />
+      <img class="hidden sm:block w-full h-full -mr-1" width="2100" height="600" :src="$t('logo')" alt="Logo" />
     </a>
     <div class="ml-auto hidden md:flex flex-col items-end">
       <button class="relative flex items-center py-1 mb-3 bg-white text-black hover:text-gray-600 transition-all" :class="bannerIsVisible ? 'px-3' : 'px-2 -mr-1 text-xs'">

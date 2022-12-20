@@ -1,4 +1,5 @@
 export default {
+  'logo': '/PMT-LOGO_zh.svg',
   'homepage': '首頁',
   'nav.intro': 'PrivacyPRO',
   'nav.product': '產品',
@@ -18,14 +19,14 @@ export default {
   'Revealed by 3D reconstruction of the face or body surface from CT and MRI': '隱私資訊通過CT和MRI的面部或身體表面的三維重建而洩露',
 
   'Product Features': '產品特色',
-  'Automation': '自動化',
-  'Our product will provide a standardized process to help AI developers efficiently manage raw medical data to build high quality de-identified datasets.': '我們的產品提供一個標準化的流程，幫助人工智慧開發者有效地管理原始醫療數據，以建立高質量的去識別化數據集。',
-  'Telemedicine': '遠程醫療',
-  'We will provide our de-identification solution to customers for clinical and research use, including secure data storage and secure data sharing for telemedicine.': '我們向客戶提供用於臨床和研究的身份識別解決方案，包括遠程醫療的安全數據存儲和安全數據共用。',
-  'Privacy Protection': '隱私保護',
-  'Through our de-identification technology, including medical image DICOM header de-identification, text de-identification and facial de-identification, patient privacy information can be comprehensively protected.': '通過我們的去識別技術，包括醫學圖像DICOM頭文件去識別技術、圖像中文本資訊去識別技術和麵部資訊去識別，病人的隱私資訊可以得到全面的保護。',
-  'Anatomical Preservation': '解剖資訊保留',
-  'De-identification techniques are often accompanied by the destruction of internal anatomical information, while our de-identification keeps anatomical information intact.': '身份去識別技術往往伴隨著內部解剖資訊的破壞，而我們的身份去識別技術可以保持解剖資訊的完整性。',
+  'feature1': '自動化',
+  'feature1_description': '我們的產品提供全面的脫敏技術，保護醫療影像數據中的病人隱私。',
+  'feature2': '遠程醫療',
+  'feature2_description': '我們向客戶提供用於臨床和研究的身份識別解決方案，包括遠程醫療的安全數據存儲和安全數據共用。',
+  'feature3': '數據管理',
+  'feature3_description': '我們的產品可以用於醫療影像數據管理，為AI和影像組學研究建立高質量的脫敏數據集。',
+  'feature4': '解剖資訊保留',
+  'feature4_description': '身份去識別技術往往伴隨著內部解剖資訊的破壞，而我們的身份去識別技術可以保持解剖資訊的完整性。',
 
   'Our Team': '我們的團隊',
   'PMT is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.': '唯名醫療科技有限公司（PMT），是一家來自香港的專注於醫療圖像隱私保護的早期初創公司。',
