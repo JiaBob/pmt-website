@@ -1,5 +1,5 @@
 export default {
-  'logo': '/PMT-LOGO.svg',
+  'logo': '/PMT-LOGO_en.svg',
   'homepage': 'Homepage',
   'nav.intro': 'PrivacyPRO',
   'nav.product': 'Product',
