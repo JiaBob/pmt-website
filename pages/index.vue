@@ -147,7 +147,7 @@
     <div class="relative transition-all duration-300" :class="bannerIsVisible ? 'pt-20' : 'pt-20'">
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center text-center">
         <p id="about-us" class="font-bold uppercase text-2xl md:text-3xl -mt-8 mb-12 scroll-mt-20">{{ $t('Our Company') }}</p>
-        <div class="container mx-auto bg-white w-full h-full px-4 md:px-14 flex flex-col md:flex-row justify-center items-center">
+        <div class="container max-w-screen-lg mx-auto bg-white w-full h-full px-4 md:px-14 flex flex-col md:flex-row justify-center items-center">
           <!-- <div class="w-full md:w-6/12">
             <img src="/team/Team.webp" width="600" height="300" alt="Team" />
           </div> -->
