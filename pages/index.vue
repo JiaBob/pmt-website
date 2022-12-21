@@ -27,7 +27,10 @@
         <div class="flex-shrink-0 flex-1 px-4 md:px-8 lg:px-14 container max-w-screen-lg mx-auto">
           <div class="relative w-full pb-[56.25%] bg-black">
             <div class="absolute inset-0">
-              <iframe class="w-full h-full" title="vimeo-player" src="https://player.vimeo.com/video/779102538?h=849d46f23f" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              <!-- <iframe class="w-full h-full" title="vimeo-player" src="https://player.vimeo.com/video/779102538?h=849d46f23f" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
+              <video width="1920" height="1080" class="w-full h-full" preload="auto" controls>
+                <source src="https://jiabotest.s3.ap-northeast-2.amazonaws.com/PMT-introduction.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
