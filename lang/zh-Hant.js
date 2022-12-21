@@ -28,9 +28,9 @@ export default {
   'feature4': '解剖資訊保留',
   'feature4_description': '身份去識別技術往往伴隨著內部解剖資訊的破壞，而我們的身份去識別技術可以保持解剖資訊的完整性。',
 
-  'Our Team': '我們的團隊',
-  'PMT is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.': '唯名醫療科技有限公司（PMT），是一家來自香港的專注於醫療圖像隱私保護的早期初創公司。',
-  'The team includes both clinical and technical experts who have worked in the field of medical imaging for decades.': '該團隊包括在醫學影像領域工作了幾十年的臨床和技術專家。',
+  'Our Company': '我們的公司',
+  'company_description': '唯名醫療科技有限公司（PMT），是一家來自香港的專注於醫療圖像隱私保護的早期初創公司。我們提供病人隱私保護相關的軟件產品用於促進在醫學影像中的科研和臨床應用。',
+  'team_description': '我們的團隊包含了學界，業界和臨床人士。',
   
   'Our Core Members': '主要成員',
   'We are a versatile team in technical, academic, and the clinical fields.': '我們是一個在技術、學術和臨床領域的全能團隊。',

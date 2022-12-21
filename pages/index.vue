@@ -143,17 +143,17 @@
         </div>
       </div>
     </div>
-    <!-- Our Team -->
+    <!-- Our Company -->
     <div class="relative transition-all duration-300" :class="bannerIsVisible ? 'pt-20' : 'pt-20'">
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center text-center">
-        <p id="about-us" class="font-bold uppercase text-2xl md:text-3xl -mt-8 mb-12 scroll-mt-20">{{ $t('Our Team') }}</p>
+        <p id="about-us" class="font-bold uppercase text-2xl md:text-3xl -mt-8 mb-12 scroll-mt-20">{{ $t('Our Company') }}</p>
         <div class="container mx-auto bg-white w-full h-full px-4 md:px-14 flex flex-col md:flex-row justify-center items-center">
-          <div class="w-full md:w-6/12">
+          <!-- <div class="w-full md:w-6/12">
             <img src="/team/Team.webp" width="600" height="300" alt="Team" />
-          </div>
-          <div class="w-full md:w-6/12 mt-6 md:mt-0 md:ml-14 text-gray-700 md:text-xl space-y-3 text-center sm:text-left">
-            <p>{{ $t('PMT is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.') }}</p>
-            <p>{{ $t('The team includes both clinical and technical experts who have worked in the field of medical imaging for decades.') }}</p>
+          </div> -->
+          <div class="w-full mt-6 md:mt-0 md:ml-14 text-gray-700 md:text-xl space-y-3 text-center sm:text-left">
+            <p>{{ $t('company_description') }}</p>
+            <p>{{ $t('team_description') }}</p>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@
     <div class="relative transition-all duration-300" :class="bannerIsVisible ? 'pt-20' : 'pt-20'">
       <div class="relative inset-0 w-full h-full flex flex-col justify-center items-center">
         <p class="font-bold uppercase text-2xl md:text-3xl -mt-4 mb-2">{{ $t('Our Core Members') }}</p>
-        <p class="px-6 text-center text-xl md:text-2xl mb-12 text-gray-700">{{ $t('We are a versatile team in technical, academic, and the clinical fields.') }}</p>
+        <!-- <p class="px-6 text-center text-xl md:text-2xl mb-12 text-gray-700">{{ $t('We are a versatile team in technical, academic, and the clinical fields.') }}</p> -->
         <swiper
           id="swiperTeamMembers"
           class="bg-white w-full h-full"

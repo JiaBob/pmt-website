@@ -28,9 +28,9 @@ export default {
   'feature4': 'Anatomical Preservation',
   'feature4_description': 'Our product keeps anatomical information intact in medical images after de-identification.',
 
-  'Our Team': 'Our Team',
-  'PMT is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.': 'PrivacyPRO Medical Technology (PMT) is an early-stage startup company from Hong Kong that focuses on medical image privacy protection.',
-  'The team includes both clinical and technical experts who have worked in the field of medical imaging for decades.': 'The team includes both clinical and technical experts who have worked in the field of medical imaging for decades.',
+  'Our Company': 'Our Company',
+  'company_description': 'PrivacyPro Medical Technology Limited (PMT) is a startup company founded by a team from the Chinese University of Hong Kong. We provide software products to protect patient privacy and facilitate research and clinical utilities of medical images.',
+  'team_description': 'Our team includes medical imaging engineers, clinical radiologists, and business professionals.',
   
   'Our Core Members': 'Our Core Members',
   'We are a versatile team in technical, academic, and the clinical fields.': 'We are a versatile team in technical, academic, and the clinical fields.',
