@@ -269,7 +269,7 @@
     <div class="sticky top-full">
       <!-- Map -->
       <div class="w-full">
-        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.839525399046!2d114.15548349999999!3d22.2840679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007cb1ddff95%3A0x10263cb611def1fe!2sCentral%20Market!5e0!3m2!1sen!2ssg!4v1670863228298!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.800642190002!2d114.15295965140163!3d22.285540385259306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007cd0163255%3A0xc7d5bba2381c2cbf!2z5Lit5L-d6ZuG5ZyY5aSn5buI!5e0!3m2!1szh-TW!2shk!4v1672913639445!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="p-4 text-center bg-black text-white">
         <p id="contact" class="font-bold uppercase text-2xl md:text-3xl mt-8 mb-2">{{ $t('Contact Us') }}</p>
