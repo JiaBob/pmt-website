@@ -75,4 +75,6 @@ export default {
 
   'Copyright': '版權所有',
   'All Rights Reserved.': '保留所有權利。',
+
+  'price2': '$80000',
 };

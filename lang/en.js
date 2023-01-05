@@ -75,4 +75,6 @@ export default {
 
   'Copyright': 'Copyright',
   'All Rights Reserved.': 'All Rights Reserved.',
+
+  'price2': '$80000',
 };

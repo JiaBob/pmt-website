@@ -58,7 +58,7 @@
                 <span>Professional</span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
-                $80 <span class="text-sm font-normal text-gray-500">/ year</span>
+                {{ $t('price2') }} <span class="text-sm font-normal text-gray-500">/ year</span>
               </div>
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase">Go Professional</button>
