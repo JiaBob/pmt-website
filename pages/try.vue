@@ -94,7 +94,7 @@
                 <span> {{ $t('Productivity') }} </span>
               </th>
               <th class="px-4 py-3 text-center whitespace-nowrap">
-                <span> {{ $t('Professional') }} /span>
+                <span> {{ $t('Professional') }} </span>
               </th>
             </tr>
           </thead>
