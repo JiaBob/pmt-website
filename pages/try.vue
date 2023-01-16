@@ -24,9 +24,9 @@
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
               <ul class="text-sm mt-3 space-y-2">
-                <li v-for="n in 9" :key="n" class="flex items-center">
+                <li v-for="n in 6" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>Feature {{ n }}</span>
+                  <span>{{ $t("Feature" + n) }}</span>
                 </li>
               </ul>
             </div>
@@ -37,16 +37,16 @@
                 <span>Productivity</span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
-                $50 <span class="text-sm font-normal text-gray-500">/ year</span>
+                {{ $t('price1') }}  <span class="text-sm font-normal text-gray-500">/ year</span>
               </div>
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">Everything in Standard plus</div>
               <ul class="text-sm mt-3 space-y-2">
-                <li v-for="n in 12" :key="n" class="flex items-center">
+                <li v-for="n in 9" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>Feature {{ n }}</span>
+                  <span>{{ $t("Feature" + n) }}</span>
                 </li>
               </ul>
             </div>
@@ -67,7 +67,7 @@
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 10" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>Feature {{ n }}</span>
+                  <span>{{ $t("Feature" + n) }}</span>
                 </li>
               </ul>
             </div>
