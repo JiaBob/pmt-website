@@ -343,7 +343,7 @@ const mailtoMessage = ref('');
 
 const mailtoLink = computed(() => {
   let mailto = 'mailto:jiabo@privacypromedical.com';
-  mailto += `?subject=${encodeURIComponent(t('PMT Contact Us'))}`;
+  mailto += `?subject=${encodeURIComponent(`${mailtoName.value} Contact Us `)}`;
   mailto += `&body=${encodeURIComponent(`${mailtoMessage.value}\n\n${t('From')}: "${mailtoName.value}" ${mailtoEmailFrom.value ? '<' + mailtoEmailFrom.value + '>' : ''}`)}`;
   return mailto;
 });
