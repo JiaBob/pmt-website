@@ -275,15 +275,15 @@
         <p id="contact" class="font-bold uppercase text-2xl md:text-3xl mt-8 mb-2">{{ $t('Contact Us') }}</p>
         <form class="flex flex-col w-72 md:w-full md:max-w-md mx-auto scroll-mt-20">
           <label class="mt-4">
-            <input class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="name" :placeholder="$t('Name')" type="text" />
+            <input v-model="mailtoName" class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="name" :placeholder="$t('Name')" type="text" />
           </label>
           <label class="mt-4">
-            <input class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="email" :placeholder="$t('Email*')" type="text" />
+            <input v-model="mailtoEmailFrom" class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="email" :placeholder="$t('Email*')" type="text" />
           </label>
           <label class="mt-4">
-            <textarea class="w-full px-3 py-2 border border-white bg-black placeholder-gray-500 resize-none outline-none focus:ring-1 focus:ring-white" name="message" :placeholder="$t('Message')" rows="8"></textarea>
+            <textarea v-model="mailtoMessage" class="w-full px-3 py-2 border border-white bg-black placeholder-gray-500 resize-none outline-none focus:ring-1 focus:ring-white" name="message" :placeholder="$t('Message')" rows="8"></textarea>
           </label>
-          <button class="mt-4 w-full md:w-36 mx-auto px-3 py-2 h-10 bg-white hover:bg-gray-200 transition text-black uppercase text-sm font-medium" type="submit">{{ $t('Submit') }}</button>
+          <a :href="mailtoLink" class="mt-4 inline-flex justify-center items-center w-full md:w-36 mx-auto px-3 py-2 h-10 bg-white hover:bg-gray-200 transition text-black uppercase text-sm font-medium" type="submit">{{ $t('Submit') }}</a>
         </form>
         <TheFooter class="mt-8 mb-4" />
       </div>
@@ -333,6 +333,19 @@ onUnmounted(() => {
     window._player.dispose();
   }
   stop();
+});
+
+const { t } = useI18n();
+
+const mailtoName = ref('');
+const mailtoEmailFrom = ref('');
+const mailtoMessage = ref('');
+
+const mailtoLink = computed(() => {
+  let mailto = 'mailto:jiabo@privacypromedical.com';
+  mailto += `?subject=${encodeURIComponent(t('PMT Contact Us'))}`;
+  mailto += `&body=${encodeURIComponent(`${mailtoMessage.value}\n\n${t('From')}: "${mailtoName.value}" <${mailtoEmailFrom.value}>`)}`;
+  return mailto;
 });
 </script>
 
