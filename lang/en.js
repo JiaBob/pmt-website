@@ -76,8 +76,15 @@ export default {
   'Copyright': 'Copyright',
   'All Rights Reserved.': 'All Rights Reserved.',
 
+  "Pricing Plans" : "Pricing Plans",
+
   "BannerAdvertisement" : 'Our subscription plans unlock powerful experiences on top of the standard experience you have come to love. Choose from...',
   "You will have" : 'You will have',
+
+  'Free': 'Free',
+  'Go Free' : 'Go Free',
+  'Go Productivity' : 'Go Productivity',
+  'Go Professional': 'Go Professional',
   'price2': '$HKD 3000',
   'price1': '$HKD 2000',
 
@@ -118,7 +125,7 @@ export default {
   "Feature42" : "Reading",
   "Feature43" : "Data Analysis",
   "Feature44" : "Privacy Cloud",
-  "Feature45" : "Auto - Data",
+  "Feature45" : "Auto-Data",
   "Feature46" : "Auto-Rad",
   "Feature47" : "Batch De-identification",
   "Feature48" : "Multiple Licenses",

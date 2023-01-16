@@ -6,7 +6,7 @@
     <div class="min-h-screen relative flex justify-center items-start bg-white text-black transition-all duration-300" :class="bannerIsVisible ? 'pt-20' : 'pt-20'">
       <div class="absolute inset-0 w-full h-[85vh] overflow-hidden bg-black"></div>
       <div ref="bannerContainer" class="relative container mx-auto mt-8 md:mt-16 flex-1 flex flex-col justify-center items-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white">Pricing Plans</h1>
+        <h1 class="text-4xl md:text-5xl font-bold text-white">{{ $t("Pricing Plans") }} </h1>
         <div ref="bannerInCheckTarget">
           <p class="px-4 mt-4 text-lg sm:text-xl text-gray-300">{{ $t("BannerAdvertisement") }}</p>
         </div>
@@ -14,13 +14,13 @@
           <li class="w-full md:w-1/3 p-4">
             <div class="h-full px-7 py-8 flex flex-col bg-white border border-gray-300 rounded-md sm:rounded-lg">
               <div class="flex items-center font-bold text-lg text-gray-500">
-                <span>Standard</span>
+                <span>{{ $t('Standard') }} </span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
-                Free
+                {{ $t('Free') }}  <span class="text-sm font-normal text-gray-500"> </span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Free</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">  {{ $t('Go Free') }} Go Free</button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">  {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
@@ -34,10 +34,10 @@
           <li class="w-full md:w-1/3 p-4">
             <div class="h-full px-7 py-8 flex flex-col bg-white border border-gray-300 rounded-md sm:rounded-lg">
               <div class="flex items-center font-bold text-lg text-gray-500">
-                <span>Productivity</span>
+                <span> {{ $t('Productivity') }} </span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
-                {{ $t('price1') }}  <span class="text-sm font-normal text-gray-500">/ year</span>
+                {{ $t('price1') }}  <span class="text-sm font-normal text-gray-500">  / year</span>
               </div>
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
@@ -58,10 +58,10 @@
                 <span>Professional</span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
-                {{ $t('price2') }} <span class="text-sm font-normal text-gray-500">/ year</span>
+                {{ $t('price2') }} <span class="text-sm font-normal text-gray-500">   / year</span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase">Go Professional</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase"> {{ $t('Go Professional') }} </button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900"> {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
