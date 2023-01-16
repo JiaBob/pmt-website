@@ -19,7 +19,7 @@
         <span class="font-light opacity-50">|</span>
         <NuxtLink class="capitalize hover:underline hover:text-gray-700 transition" :to="isHome ? '#product' : '/#product'">{{ $t('nav.product') }}</NuxtLink>
         <span class="font-light opacity-50">|</span>
-        <a class="capitalize hover:underline hover:text-gray-700 transition" :href="'/try'">{{ $t('nav.try') }}</a>
+        <a class="capitalize hover:underline hover:text-gray-700 transition" :href="'#'">{{ $t('nav.try') }}</a>
         <span class="font-light opacity-50">|</span>
         <NuxtLink class="capitalize hover:underline hover:text-gray-700 transition" :to="isHome ? '#about-us' : '/#about-us'">{{ $t('nav.about') }}</NuxtLink>
         <span class="font-light opacity-50">|</span>
@@ -44,7 +44,7 @@
           <ul class="relative flex-auto flex-grow p-4 flex flex-col justify-center items-center">
             <li class="p-4" @click="menuOpened = false"><NuxtLink class="text-xl font-semibold uppercase hover:underline" :to="isHome ? '#intro' : '/#intro'">{{ $t('nav.intro') }}</NuxtLink></li>
             <li class="p-4" @click="menuOpened = false"><NuxtLink class="text-xl font-semibold uppercase hover:underline" :to="isHome ? '#product' : '/#product'">{{ $t('nav.product') }}</NuxtLink></li>
-            <li class="p-4" @click="menuOpened = false"><a class="text-xl font-semibold uppercase hover:underline" :href="'/try'">{{ $t('nav.try') }}</a></li>
+            <li class="p-4" @click="menuOpened = false"><a class="text-xl font-semibold uppercase hover:underline" :href="'#'">{{ $t('nav.try') }}</a></li>
             <li class="p-4" @click="menuOpened = false"><NuxtLink class="text-xl font-semibold uppercase hover:underline" :to="isHome ? '#about-us' : '/#about-us'">{{ $t('nav.about') }}</NuxtLink></li>
             <li class="p-4" @click="menuOpened = false"><NuxtLink class="text-xl font-semibold uppercase hover:underline" :to="isHome ? '#contact' : '/#contact'">{{ $t('nav.contact') }}</NuxtLink></li>
           </ul>
