@@ -76,6 +76,8 @@ export default {
   'Copyright': '版權所有',
   'All Rights Reserved.': '保留所有權利。',
 
+  "BannerAdvertisement" : '訂閱解鎖更多功能',
+  "You will have" : '功能',
   'price2': '$HKD 3000',
   'price1': '$HKD 2000',
 
@@ -106,8 +108,6 @@ export default {
   'Feature38': '批量脱敏',
   'Feature39': '选择性脱敏',
   'Feature310': '快速Auto-Rad',
-
-
 
   'Compare features': '功能',
   'Standard': '免费版',
