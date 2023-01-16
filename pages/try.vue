@@ -26,7 +26,7 @@
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 6" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>{{ $t("Feature" + n) }}</span>
+                  <span>{{ $t("Feature1" + n) }}</span>
                 </li>
               </ul>
             </div>
@@ -42,11 +42,11 @@
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
               </div>
-              <div class="text-sm mt-5 font-medium text-gray-900">Everything in Standard plus</div>
+              <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 9" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>{{ $t("Feature" + n) }}</span>
+                  <span>{{ $t("Feature2" + n) }}</span>
                 </li>
               </ul>
             </div>
@@ -63,11 +63,11 @@
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase">Go Professional</button>
               </div>
-              <div class="text-sm mt-5 font-medium text-gray-900">Everything in Productivity plus</div>
+              <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 10" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
-                  <span>{{ $t("Feature" + n) }}</span>
+                  <span>{{ $t("Feature3" + n) }}</span>
                 </li>
               </ul>
             </div>
