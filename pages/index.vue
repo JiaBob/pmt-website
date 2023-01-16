@@ -277,7 +277,7 @@
           <label class="mt-4">
             <input v-model="mailtoName" class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="name" :placeholder="$t('Name')" type="text" />
           </label>
-          <label class="mt-4">
+          <label v-if="false" class="mt-4">
             <input v-model="mailtoEmailFrom" class="w-full h-10 px-3 py-2 border border-white bg-black placeholder-gray-500 outline-none focus:ring-1 focus:ring-white" name="email" :placeholder="$t('Email*')" type="text" />
           </label>
           <label class="mt-4">
@@ -344,7 +344,7 @@ const mailtoMessage = ref('');
 const mailtoLink = computed(() => {
   let mailto = 'mailto:jiabo@privacypromedical.com';
   mailto += `?subject=${encodeURIComponent(t('PMT Contact Us'))}`;
-  mailto += `&body=${encodeURIComponent(`${mailtoMessage.value}\n\n${t('From')}: "${mailtoName.value}" <${mailtoEmailFrom.value}>`)}`;
+  mailto += `&body=${encodeURIComponent(`${mailtoMessage.value}\n\n${t('From')}: "${mailtoName.value}" ${mailtoEmailFrom.value ? '<' + mailtoEmailFrom.value + '>' : ''}`)}`;
   return mailto;
 });
 </script>
