@@ -8,7 +8,7 @@
       <div ref="bannerContainer" class="relative container mx-auto mt-8 md:mt-16 flex-1 flex flex-col justify-center items-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white">Pricing Plans</h1>
         <div ref="bannerInCheckTarget">
-          <p class="px-4 mt-4 text-lg sm:text-xl text-gray-300">Our subscription plans unlock powerful experiences on top of the standard experience you've come to love. Choose from...</p>
+          <p class="px-4 mt-4 text-lg sm:text-xl text-gray-300">{{ $t("BannerAdvertisement") }}</p>
         </div>
         <ul class="flex flex-wrap container max-w-screen-lg mx-auto mt-6">
           <li class="w-full md:w-1/3 p-4">
@@ -22,7 +22,7 @@
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Free</button>
               </div>
-              <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
+              <div class="text-sm mt-5 font-medium text-gray-900">  {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 6" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
@@ -42,7 +42,7 @@
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
               </div>
-              <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
+              <div class="text-sm mt-5 font-medium text-gray-900"> {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 9" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
@@ -63,7 +63,7 @@
               <div class="-my-1">
                 <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-white bg-black hover:bg-gray-800 transition border border-gray-500 rounded uppercase">Go Professional</button>
               </div>
-              <div class="text-sm mt-5 font-medium text-gray-900">You will have</div>
+              <div class="text-sm mt-5 font-medium text-gray-900"> {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
                 <li v-for="n in 10" :key="n" class="flex items-center">
                   <span class="bg-gray-100 rounded-full p-1 mr-2"><CheckIcon class="h-5 w-5 text-gray-600"/></span>
@@ -85,23 +85,23 @@
           <thead class="bg-black text-white text-base sm:text-lg md:text-xl">
             <tr>
               <th class="w-full px-4 py-3 text-left text-lg sm:text-xl md:text-2xl whitespace-nowrap">
-                <span>Compare features</span>
+                <span>  {{ $t('Compare features') }} </span>
               </th>
               <th class="px-4 py-3 text-center whitespace-nowrap">
-                <span>Standard</span>
+                <span> {{ $t('Standard') }} </span>
               </th>
               <th class="px-4 py-3 text-center whitespace-nowrap">
-                <span>Productivity</span>
+                <span> {{ $t('Productivity') }} </span>
               </th>
               <th class="px-4 py-3 text-center whitespace-nowrap">
-                <span>Professional</span>
+                <span> {{ $t('Professional') }} /span>
               </th>
             </tr>
           </thead>
           <tbody class="text-sm sm:text-base">
-            <tr v-for="n in 12" :key="n" class="bg-gray-50 bg-opacity-100 hover:bg-gray-200 hover:bg-opacity-90 transition">
+            <tr v-for="n in 9" :key="n" class="bg-gray-50 bg-opacity-100 hover:bg-gray-200 hover:bg-opacity-90 transition">
               <td class="w-full px-4 py-2 sm:py-3 md:py-4 text-left whitespace-nowrap">
-                <span>{{ $t("Feature4" + n )}}</span>
+                <span> {{ $t("Feature4" + n) }} </span>
               </td>
               <td class="px-4 py-2 sm:py-3 md:py-4 text-center whitespace-nowrap">
                 <template v-if="n <= 3">
