@@ -20,7 +20,7 @@
                 {{ $t('Free') }}  <span class="text-sm font-normal text-gray-500"> </span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">  {{ $t('Go Free') }} Go Free</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">  {{ $t('Go Free') }} </button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900">  {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
@@ -40,7 +40,7 @@
                 {{ $t('price1') }}  <span class="text-sm font-normal text-gray-500">  / year</span>
               </div>
               <div class="-my-1">
-                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase">Go Productivity</button>
+                <button class="w-full mt-5 px-3 py-2 font-semibold text-sm text-black bg-white hover:bg-gray-200 transition border border-gray-500 rounded uppercase"> {{ $t('Go Productivity') }} </button>
               </div>
               <div class="text-sm mt-5 font-medium text-gray-900"> {{ $t('You will have') }} </div>
               <ul class="text-sm mt-3 space-y-2">
@@ -55,7 +55,7 @@
             <div class="h-full px-7 py-8 flex flex-col bg-white border border-gray-300 rounded-md sm:rounded-lg">
               <div class="flex items-center font-bold text-lg text-gray-500">
                 <span class="bg-gray-200 rounded-full p-1 mr-2"><StarIcon class="h-5 w-5 text-gray-700" /></span>
-                <span>Professional</span>
+                <span> {{ $t('Go Professional') }} </span>
               </div>
               <div class="text-3xl md:text-4xl font-bold mt-1">
                 {{ $t('price2') }} <span class="text-sm font-normal text-gray-500">   / year</span>
