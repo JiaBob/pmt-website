@@ -108,7 +108,7 @@ export default {
   'Feature38': '批量脱敏',
   'Feature39': '选择性脱敏',
   'Feature310': '快速Auto-Rad',
-
+  
   'Compare features': '功能',
   'Standard': '免费版',
   'Productivity': '进阶版',

@@ -106,4 +106,18 @@ export default {
   'Feature39': 'Customized de-identification',
   'Feature310': 'Fast Auto-Rad',
 
+  'Compare features': '功能',
+  'Standard': '免费版',
+  'Productivity': '进阶版',
+  'Professional': '专业版',
+
+  "Feature41" : "全面脱敏",
+  "Feature42" : "读片",
+  "Feature43" : "数据分析",
+  "Feature44" : "隐私云",
+  "Feature45" : "Auto-Data",
+  "Feature46" : "Auto-Rad",
+  "Feature47" : "批量自动脱敏",
+  "Feature48" : "多个设备许可",
+  "Feature49" : "超大云空间"
 };

@@ -101,7 +101,7 @@
           <tbody class="text-sm sm:text-base">
             <tr v-for="n in 12" :key="n" class="bg-gray-50 bg-opacity-100 hover:bg-gray-200 hover:bg-opacity-90 transition">
               <td class="w-full px-4 py-2 sm:py-3 md:py-4 text-left whitespace-nowrap">
-                <span>Feature ...</span>
+                <span>{{ $t("Feature4" + n )}}</span>
               </td>
               <td class="px-4 py-2 sm:py-3 md:py-4 text-center whitespace-nowrap">
                 <template v-if="n <= 3">
